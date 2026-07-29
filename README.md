@@ -26,3 +26,17 @@ Go to:
 3. Click the ↻ Reload button.
 
 Chrome will reload the updated extension.
+
+However, existing webpage tabs won't automatically rerun the content script. You'll usually need to refresh the webpage too.
+
+So the cycle is:
+
+Edit JS
+   ↓
+chrome://extensions → Reload
+   ↓
+Refresh webpage
+   ↓
+Updated JS runs
+
+If you're developing this frequently, you can also automate the extension reload + page refresh with Chrome DevTools Protocol / Playwright, so you don't have to manually click Reload.
