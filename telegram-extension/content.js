@@ -1,12 +1,8 @@
 // Goal: Automatically open work tab when Telegram is opened.
-console.log("Page loaded!");
+console.log("Page loaded! (my custom chrome extension)❤️");
 
 setTimeout(() => {
-    const textLabelEl = [...document.querySelectorAll('#FoldersSidebar *')].find(el => el.textContent?.trim() === 'WORK');
-    const element = textLabelEl?.parentElement;
-    console.log(parent);
-
-
+    const element = [...document.querySelectorAll('#FoldersSidebar *')].find(el => el.textContent?.trim() === 'WORK');
     console.log("🚀 ~ element?", element);
 
     if (element) {
