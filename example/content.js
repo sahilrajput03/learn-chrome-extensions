@@ -1,3 +1,5 @@
+// Note: After installing this extension please go to https://example.com/ to view it in action.
+
 console.log("Page loaded!");
 
 document.body.style.background = "red";
